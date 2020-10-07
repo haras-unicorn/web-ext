@@ -1,0 +1,26 @@
+type User
+{
+    id: String!
+    username: String!
+
+    accessToken: String!
+    refreshToken: String
+
+    tokenExpiryDate: String!
+}
+
+input LoginUserInput
+{
+    id: String!
+    username: String!
+
+    accessToken: String!
+    refreshToken: String
+
+    tokenExpiryDate: String!
+}
+
+extend type QueryType
+{
+    User: User
+}

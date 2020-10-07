@@ -1,0 +1,4 @@
+extend type QueryType
+{
+    readImage(id: String!): String!
+}

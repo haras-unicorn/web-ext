@@ -1,0 +1,16 @@
+input ImageInput
+{
+    image: String!
+}
+
+type ImageDescription
+{
+    id: String!
+}
+
+extend type MutationType
+{
+    createImage(input: ImageInput!): ImageDescription!
+    updateImage(id: String!, input: ImageInput!): String
+    deleteImage(id: String!): String
+}

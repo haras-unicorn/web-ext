@@ -1,0 +1,53 @@
+{
+    "Error":  {
+                  "Actions":  {
+                                  "Error":  "/Error"
+                              },
+                  "Route":  "/"
+              },
+    "Bank":  {
+                 "Actions":  {
+                                 "GetBanks":  "/"
+                             },
+                 "Route":  "/api/Bank"
+             },
+    "GroupChat":  {
+                      "Actions":  {
+                                      "GetAllGroupChats":  "/GetAllGroupChats",
+                                      "PostGroupChat":  "/CreateGroupChat",
+                                      "AddMembers":  "/AddMembersInGroupChat",
+                                      "SendChanelChatMessage":  "/SendChanelChatMessage",
+                                      "UpdateGroupChat":  "/UpdateGroupChat",
+                                      "DeleteGroupChat":  "/DeleteGroupChat",
+                                      "ArchiveGroupChat":  "/ArchiveGroupChat",
+                                      "UnArchiveGroupChat":  "/UnArchiveGroupChat",
+                                      "CreateOrUpdateFile":  "/CreateOrUpdateFile",
+                                      "DeleteFile":  "/DeleteFile"
+                                  },
+                      "Route":  "/api/GroupChat"
+                  },
+    "Image":  {
+                  "Actions":  {
+                                  "Get":  "/{id}",
+                                  "PostWithId":  "/{id}",
+                                  "PostWithoutId":  "/",
+                                  "Put":  "/{id}",
+                                  "Delete":  "/{id}"
+                              },
+                  "Route":  "/api/image"
+              },
+    "UserSubProject":  {
+                           "Actions":  {
+                                           "GetUserSubProjects":  "/get-user-sub-projects"
+                                       },
+                           "Route":  "/api/sub-project"
+                       },
+    "UserWorkHour":  {
+                         "Actions":  {
+                                         "GetUserWorkHoursFiltered":  "/get-user-work-hours",
+                                         "GetUserWorkHourStats":  "/get-user-work-hour-stats",
+                                         "AddUserWorkHour":  "/add-user-work-hour"
+                                     },
+                         "Route":  "/api/UserWorkHour"
+                     }
+}

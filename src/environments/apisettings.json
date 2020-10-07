@@ -1,0 +1,78 @@
+{
+      "Azure": 
+    {
+        "AzureConfigOptions": {
+            "Tenant": "91288ddb-43f0-4211-86df-9ef5e4609a30",
+            "ClientId": "14832ed4-1565-4716-8d21-8a65d622ad16",
+            "ClientSecret": "vsRY3Zp?UwMxa=Xq_vD+CHgf4zjaqD54"
+        },
+        "AzureAd": {
+            "Instance": "https://login.microsoftonline.com/",
+            "Domain": "helbnet.onmicrosoft.com",
+            "TenantId": "91288ddb-43f0-4211-86df-9ef5e4609a30",
+            "ClientId": "14832ed4-1565-4716-8d21-8a65d622ad16",
+            "CallbackPath": "/signin-oidc"
+        }
+    },
+    "Error": {
+        "ErrorRoute": "/Error"
+    },
+    "Host": {
+        "HttpsRedirectionPort": 443,
+        "ApplicationUrl": "http://localhost:5050"
+    },
+    "Ldap": {
+        "Hostname": "dc01.helbnet.local",
+        "Port": 3268,
+        "Domain": "helbnet"
+    },
+    "Localization": 
+    {
+    },
+    "GraphQl": {
+        "SchemaRoute": "/graphql/schema"
+    },
+    "Rest": {
+        "ControllerRoute": "/api/{controller}/{action}/{id?}"
+    },
+    "Serializers": 
+    {
+        
+    },
+    "Cors": {
+        "AllowedOrigins": "*",
+        "AllowedHeaders": "*",
+        "AllowedMethods": "*"
+    },
+    "Identity": {
+        "AuthorizationApiId": "altibiz_webapi_auth",
+        "AuthorizationApiFriendlyName": "AltiBiz.WebApi Authorization",
+        "RestApiId": "altibiz_webapi_rest",
+        "RestApiFriendlyName": "AltiBiz.WebApi REST",
+        "SwaggerClientId": "swagger_ui",
+        "SwaggerClientFriendlyName": "Swagger UI",
+        "SwaggerClientSecret": "swag",
+        "GraphQlApiId": "altibiz_webapi_graphql",
+        "GraphQlApiFriendlyName": "Altibiz.WebApi GraphQL",
+        "ClientAppId": "client_app",
+        "ClientAppFriendlyName": "ClientApp",
+        "ClientAppSecret": "klijent"
+    },
+    "Authentication": {
+        "TokenRoute": "/connect/token", 
+        "AuthenticationScheme": "Bearer",
+        "ErrorScheme": "Identity.Application"
+    },
+    "Authorization": {
+        "Scheme": "Bearer",
+        "AuthorizationHeader": "Authorization"
+    },
+    "Store": {
+    },
+    "Image": {
+        "MediaType": "image/jpeg",
+        "MaxSizeInBytes": 1000000,
+        "PreferredFileExtension": "jpeg",
+        "FileExtensions": ["jpeg", "jpg"]
+    }
+}

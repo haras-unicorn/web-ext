@@ -1,0 +1,88 @@
+﻿# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: QueryType
+    mutation: MutationType
+    subscription: SubscriptionType
+}
+
+type MutationType {
+    createUserNonconformity(input: NonconformityInput!): Nonconformity!
+    deleteUserNonconformity(input: NonconformityReference!): Nonconformity!
+    updateUserNonconformity(input: NonconformityUpdate!): Nonconformity!
+}
+
+type Nonconformity {
+    apellant: String!
+    description: String!
+    id: String!
+    imageId: String
+    name: String!
+}
+
+type QueryType {
+    readNonconformities: [Nonconformity!]
+    readUserNonconformities: [Nonconformity!]
+    readUserSubProjects: [SubProject!]
+}
+
+type SubProject {
+    code: String!
+    name: String!
+}
+
+type SubscriptionType
+
+input NonconformityInput {
+    description: String!
+    imageId: String
+    name: String!
+}
+
+input NonconformityReference {
+    id: ID!
+}
+
+input NonconformityUpdate {
+    description: String
+    id: ID!
+    name: String
+}
+
+
+"The `Date` scalar type represents a year, month and day in accordance with the [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) standard."
+scalar Date
+
+"The `DateTime` scalar type represents a date and time. `DateTime` expects timestamps to be formatted in accordance with the [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) standard."
+scalar DateTime
+
+"The `DateTimeOffset` scalar type represents a date, time and offset from UTC. `DateTimeOffset` expects timestamps to be formatted in accordance with the [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) standard."
+scalar DateTimeOffset
+
+"The `Seconds` scalar type represents a period of time represented as the total number of seconds."
+scalar Seconds
+
+"The `Milliseconds` scalar type represents a period of time represented as the total number of milliseconds."
+scalar Milliseconds
+
+scalar Decimal
+
+scalar Uri
+
+scalar Guid
+
+scalar Short
+
+scalar UShort
+
+scalar UInt
+
+scalar Long
+
+scalar BigInt
+
+scalar ULong
+
+scalar Byte
+
+scalar SByte

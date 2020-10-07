@@ -1,0 +1,10 @@
+directive @rest(
+    type: String!
+    path: String!
+    endpoint: String
+    pathBuilder: String
+    method: String
+    bodyKey: String
+    bodyBuilder: String
+    bodySerializer: String
+) on FIELD

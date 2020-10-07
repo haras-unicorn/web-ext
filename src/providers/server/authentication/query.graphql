@@ -1,0 +1,30 @@
+# Per the OAuth2.0 spec
+input AuthenticateInput
+{
+    client_id: String
+    client_secret: String
+
+    grant_type: String!
+
+    username: String!
+    password: String!
+
+    scope: String
+}
+
+type AuthenticateResult
+{
+    access_token: String!
+    token_type: String!
+
+    expires_in: Int!
+
+    refresh_token: String
+
+    scope: String
+}
+
+extend type MutationType
+{
+    authenticate(input: AuthenticateInput!): AuthenticateResult
+}

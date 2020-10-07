@@ -1,0 +1,7 @@
+{
+    "name"        : "AltiBiz.ClientApp",
+    "integrations": {
+        "capacitor": { }
+    },
+    "type"        : "react"
+}

@@ -1,0 +1,9 @@
+export * as b from './core/baseTupleTraits';
+export * as f from './core/tupleFunction';
+export * as p from './core/pairTraits';
+export * as s from './core/sizedTraits';
+export * as a from './accessFunctions';
+export * as o from './optionalTraits';
+export * as sp from './spreadFunctions';
+export * as r from './reverseFunction';
+export * as fl from './firstLastFunctions';

@@ -1,0 +1,30 @@
+{
+      "Host": {
+        "HttpsRedirectionPort": 443,
+        "ApplicationUrl": "http://localhost:5050"
+    },
+    "GraphQlDevelopmentServices": {
+        "SchemaRoute": "/graphql/schema",
+        "GraphiQlRoute": "/graphql/dev/graphiql",
+        "PlaygroundRoute": "/graphql/dev/playground",
+        "VoyagerRoute": "/graphql/dev/voyager"
+    },
+    "Logging": {
+        "PathFormat": "Logs/log-{Date}.log",
+        "LogLevel": {
+            "Default": "Warning"
+        }
+    },
+    "Swagger": {
+        "Version": "V1",
+        "Title": "Swagger UI - AltiBiz.WebApi REST",
+        "RoutePrefix": "swagger",
+        "DocumentSuffix": "V1/swagger.json",
+        "DocumentName": "AltiBiz.WebApi V1"
+    },
+    "Cors": {
+        "AllowedOrigins": "*",
+        "AllowedHeaders": "*",
+        "AllowedMethods": "*"
+    }
+}
