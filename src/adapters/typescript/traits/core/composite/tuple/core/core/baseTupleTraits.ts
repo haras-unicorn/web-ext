@@ -69,7 +69,7 @@ export type MaxSize<Any> =
         c.True<c.Requires<Any, T>> extends true ?
         Any extends any ?
 
-        MaxLengthInternal<Any> :
+        MaxSizeInternal<Any> :
 
         never :
         c.Requires<Any, T>;
@@ -140,7 +140,7 @@ type ValueOfInternal<Tuple> = Tuple extends (infer Element)[] ? Element : never;
 type SizeInternal<Tuple> = c.Cast<Tuple, T>['length'];
 
 // TODO: optimize?
-type MaxLengthInternal<Tuple> =
+type MaxSizeInternal<Tuple> =
         IsMaybeInifiniteInternal<Tuple> extends true ? number :
         u.Length<IndexOfRecursive<SizeInternal<Tuple>>>;
 
